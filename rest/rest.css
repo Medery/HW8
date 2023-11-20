@@ -32,35 +32,35 @@
     transform: translateY(70px); 
 }
 
-.first_img {
+.rest__img-first {
  grid-area: first;
 }
 
-.second_img {
+.rest__img-second {
     grid-area: second;
 }
 
-.third_img {
+.rest__img-third {
     grid-area: third;
 }
 
-.fourth_img {
+.rest__img-fourth {
     grid-area: fourth;
 }
 
-.fifth_img {
+.rest__img-fifth {
     grid-area: fifth;
 }
 
-.sixth_img {
+.rest__img-sixth {
     grid-area: sixth;
 }
 
-.img__scale {
+.img-scale {
     transition: 0.3s;
 }
 
-.img__scale:hover {
+.img-scale:hover {
     transform: scale(1.1);
 }
 

@@ -22,19 +22,19 @@
     gap: 20px;
 }
 
-.rooms__img_first {
+.rooms__img-first {
     grid-area: first;
 }
 
-.rooms__img_second {
+.rooms__img-second {
     grid-area: second;
 }
 
-.rooms__img_third {
+.rooms__img-third {
     grid-area: third;
 }
 
-.rooms__img_fourth {
+.rooms__img-fourth {
     grid-area: fourth;
 }
 

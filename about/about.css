@@ -1,17 +1,17 @@
-.about-block__quote-hidden,
-.about-block__quote-main-person-hidden {
+.about__quote-hidden,
+.about__quote-mainperson-hidden {
     display: none;
 }
 
-.text__quote {
+.text-quote {
     quotes: "“" "”" "‘" "’";
 }
-.text__quote::before {
+.text-quote::before {
     content: open-quote;
     color: #6C0287;
     font-size: 1.5em;
 }
-.text__quote::after {
+.text-quote::after {
     content: close-quote;
     color: #6C0287;
     font-size: 1.5em;
@@ -64,7 +64,8 @@
     margin-bottom: 60px;
 }
 
-.about-block__text {
+.about-block__text,
+.about__quote-hidden-text {
     color: #FFF;
     font-family: Arial;
     font-size: 44px;
@@ -109,7 +110,8 @@
         line-height: 24px;
         margin-bottom: 59px;
     }
-    .about-block__text {
+    .about-block__text,
+    .about__quote-hidden-text {
         font-size: 30px;
         line-height: 36px;
         margin-bottom: 16px;
@@ -165,19 +167,20 @@
         line-height: 22px; 
     }
 
-    .about-block__text {
+    .about-block__text,
+    .about__quote-hidden-text {
         font-size: 32px;
         line-height: 32px; 
         margin-bottom: 24px;
     }
-    .about-block__quote-main-person-hidden {
+    .about__quote-mainperson-hidden {
         display: flex;
         justify-content: flex-end;
         margin-right: 15px;
         gap: 25px;
         align-items: center;
     }
-    .about-block__quote-hidden {
+    .about__quote-hidden {
         display: block;
     }
 }
@@ -205,7 +208,8 @@
     .about-block__photo {
         width: 100%;
     }
-    .about-block__text {
+    .about-block__text,
+    .about__quote-hidden-text {
         font-size: 18px;
         line-height: 25px;
         margin-bottom: 10px;
@@ -218,7 +222,7 @@
         width: 56px;
         height: 56px;
     }
-    .about-block__quote-main-person-hidden {
+    .about__quote-mainperson-hidden {
         justify-content: flex-start;
         gap: 11px;
     }
