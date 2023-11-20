@@ -1,0 +1,178 @@
+.rewiew {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.rewiew__titile {
+    color: #FFF;
+    text-align: center;
+    font-family: Arial;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    padding-top: 100px;
+}
+
+
+.first__person,
+.second__person,
+.third__person {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    width: 22.58vw;
+    color: #FFF;
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+}
+
+.first__person img,
+.second__person img,
+.third__person img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%; 
+}
+
+.first__person .image__wrapper,
+.second__person .image__wrapper,
+.third__person .image__wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.first__person .image__wrapper::before,
+.second__person .image__wrapper::before,
+.third__person .image__wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(circle at center, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.80) 100%);
+    border-radius: 50%;
+    pointer-events: none; 
+}
+
+.first__person,
+.second__person {
+    margin-bottom: 50px;
+}
+
+.rewiew__block {
+    display: flex;
+    gap: 20px;
+}
+
+.first__text,
+.second__text,
+.third__text {
+    width: 54.84vw;
+    color: #FFF;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    padding-top: 52px;
+}
+@media (max-width:1024px) {
+    .rewiew__titile {
+        padding-top: 70px;
+        margin-bottom: 26px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .first__person,
+    .second__person,
+    .third__person {
+        width: 196px;
+        gap: 21px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .first__person, .second__person {
+        margin-bottom: 40px;
+    }
+    .rewiew__block {
+        gap: 38px;
+    }
+    .first__text, .second__text, .third__text {
+        font-size: 18px;
+        line-height: 26px; 
+        padding-top: 33px;
+    }
+}
+@media (max-width:768px) {
+    .rewiew {
+        padding-left: 63px;
+        padding-right: 63px;
+    }
+    .rewiew__titile {
+        padding-top: 60px;
+        margin-bottom: 31px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .rewiew__block {
+        gap: 15px;
+    }
+    .first__person, .second__person, .third__person {
+        width: 164px;
+        font-size: 14px;
+        line-height: 20px;
+        gap: 17px;
+    }
+    .first__person, .second__person {
+        margin-bottom: 30px;
+    }
+    .first__text, .second__text, .third__text {
+        font-size: 16px;
+        line-height: 22px;
+        padding-top: 31px;
+    }
+}
+@media (max-width:320px) {
+    .rewiew {
+        padding: 0;
+    }
+    .rewiew__titile {
+        padding-top: 30px;
+        margin-bottom: 15px;
+        font-size: 14px;
+        line-height: 16px; 
+    }
+    .rewiew__block {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    .first__person, .second__person, .third__person {
+        width: 86px;
+        white-space: nowrap;
+        gap: 9px;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    .first__text, .second__text, .third__text {
+        font-size: 12px;
+        line-height: 16px;
+        width: auto;
+        padding-top: 0;
+    }
+    .first__text {
+        margin-bottom: 22px;
+    }
+    .second__text {
+        margin-bottom: 38px;
+    }
+}

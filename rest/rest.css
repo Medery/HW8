@@ -1,0 +1,130 @@
+.rest {
+    margin-bottom: 169px;
+}
+
+
+.rest__title {
+    max-width: 980px;
+    margin: 0 auto;
+    color: #FFF;
+    text-align: center;
+    font-family: Arial;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+
+.rest__img {
+    display: grid;
+    grid-template-areas: 
+    'first second third'
+    'fourth fifth sixth';
+    row-gap: 40px;
+    column-gap: 20px;
+}
+
+.rest__img img:nth-child(2),
+.rest__img img:nth-child(5) {
+    transform: translateY(70px); 
+}
+
+.first_img {
+ grid-area: first;
+}
+
+.second_img {
+    grid-area: second;
+}
+
+.third_img {
+    grid-area: third;
+}
+
+.fourth_img {
+    grid-area: fourth;
+}
+
+.fifth_img {
+    grid-area: fifth;
+}
+
+.sixth_img {
+    grid-area: sixth;
+}
+
+.img__scale {
+    transition: 0.3s;
+}
+
+.img__scale:hover {
+    transform: scale(1.1);
+}
+
+.rest__img img:nth-child(2):hover,
+.rest__img img:nth-child(5):hover {
+    transform: translateY(70px) scale(1.1); 
+}
+
+@media (max-width: 1024px) {
+    .rest {
+        margin-bottom: 122px;
+    }
+    .rest__title {
+        font-size: 30px;
+        line-height: 40px;
+        width: 83.05%;
+        margin-bottom: 36px;
+    }
+
+    .rest__img {
+        row-gap: 30px;
+        column-gap: 22px;
+    }
+    .rest__img img:nth-child(2),
+     .rest__img img:nth-child(5) {
+        transform: translateY(53px);
+     }
+}
+
+@media (max-width:768px) {
+    .rest {
+        margin-bottom: 60px;
+    }
+    .rest__title {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 30px;        
+    }
+    .rest__img {
+        grid-template-areas: 
+        'first second'
+        'third fourth'
+        'fifth sixth';
+        gap: 20px;
+    }
+    .rest__img img:nth-child(2),
+     .rest__img img:nth-child(5) {
+        transform: none;
+     }
+
+}
+
+@media (max-width:320px) {
+    .rest {
+        margin-bottom: 13px;
+    }
+    .rest__title {
+        font-size: 14px;
+        line-height: 18px;
+        width: auto;
+        margin-bottom: 15px;
+    }
+    .rest__img {
+        gap: 10px;
+    }
+}
+

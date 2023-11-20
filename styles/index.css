@@ -1,0 +1,14 @@
+@import 'normalize.css';
+@import 'style.css';
+@import '../header/header.css';
+@import '../nav/nav.css';
+@import '../rest/rest.css';
+@import '../rooms/rooms.css';
+@import '../booking/booking.css';
+@import '../about/about.css';
+@import '../rewiew/rewiew.css';
+@import '../faq/faq.css';
+@import '../contacts/contacts.css';
+@import '../vibes/header-vibes/header-vibes.css';
+@import '../vibes/about-vibes/about__vibes.css';
+@import '../vibes/other-vibes/other-vibes.css';

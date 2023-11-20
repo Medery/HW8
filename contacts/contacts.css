@@ -1,0 +1,114 @@
+.contacts {
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+.contacts__title {
+    color: #FFF;
+    text-align: center;
+    font-family: Arial;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px; 
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.flex__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.contacts__group p {
+    color: #FFF;
+    font-family: Arial;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; 
+}
+
+.contacts__img {
+    width: 57.63%;
+    height: 274px;
+    overflow: hidden;
+}
+
+.contacts__img img {
+    width: auto;
+    height: 274px;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+.contacts__location,
+.contacts__mail {
+    margin-bottom: 40px;
+}
+
+.contacts__location,
+.contacts__phone,
+.contacts__mail,
+.contacts__social {
+    display: flex;
+    gap: 26px;
+}
+
+@media (max-width: 1024px) {
+    .contacts {
+        padding-top: 70px;
+    }
+    .contacts__title {
+        margin-bottom: 26px;
+    }
+}
+
+@media (max-width:768px) {
+    .contacts__title {
+        font-size: 24px;
+    }
+    .contacts__group div:not(:last-child){
+        margin-bottom: 27px;
+    }
+    .flex__container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .contacts__img {
+        width: auto;
+    }
+    .contacts__location, .contacts__phone, .contacts__mail, .contacts__social {
+        justify-content: center;
+    }
+}
+@media (max-width:320px) {
+    .contacts {
+        padding-top: 30px;
+        margin-bottom: 50px;
+    }
+    .contacts__title {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+    .contacts__group p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .contacts__group img {
+        width: 20px;
+        height: 20px;
+    }
+    .contacts__location, .contacts__phone, .contacts__mail, .contacts__social {
+        gap: 6px;
+    }
+    .contacts__img img {
+        height: 194px;
+    }
+    .contacts__img {
+        height: 194px;
+    }
+}
